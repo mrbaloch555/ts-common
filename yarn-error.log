@@ -1,0 +1,69 @@
+Arguments: 
+  /home/fk/.nvm/versions/node/v19.0.0/bin/node /home/fk/.nvm/versions/node/v19.0.0/bin/yarn publish
+
+PATH: 
+  /home/fk/.nvm/versions/node/v19.0.0/bin:/home/fk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.0.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://npm.pkg.github.com/-/user/org.couchdb.user:balochdv: Permission denied
+      at params.callback [as _callback] (/home/fk/.nvm/versions/node/v19.0.0/lib/node_modules/yarn/lib/cli.js:66145:18)
+      at self.callback (/home/fk/.nvm/versions/node/v19.0.0/lib/node_modules/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/home/fk/.nvm/versions/node/v19.0.0/lib/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/home/fk/.nvm/versions/node/v19.0.0/lib/node_modules/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "@balochdev/ts-common",
+    "version": "1.0.0",
+    "description": "common code for exress typescript to speed up development",
+    "main": "index.ts",
+    "author": {
+      "name": "Durrah Khan",
+      "email": "durrahkhan555@gmail.com"
+    },
+    "scripts": {
+      "build": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mrbaloch555/ts-common.git"
+    },
+    "publishConfig": {
+      "registry": "https://npm.pkg.github.com"
+    },
+    "license": "MIT",
+    "dependencies": {
+      "@types/express": "^4.17.17",
+      "@types/joi": "^17.2.3",
+      "@types/morgan": "^1.9.4",
+      "@types/multer": "^1.4.7",
+      "@types/winston": "^2.4.4",
+      "express": "^4.18.2",
+      "joi": "^17.7.1",
+      "mongoose": "^6.9.1",
+      "morgan": "^1.10.0",
+      "multer": "^1.4.5-lts.1",
+      "winston": "^3.8.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
